@@ -17,4 +17,6 @@ on:
 jobs:
   build:
     name: Build
-    uses: dirkadin/workflows/.github/workflows/maven-build.yml@main
+    uses: dirkadin/workflows/.github/workflows/build.yml@main
+    with:
+      os: 'ubuntu-latest'
