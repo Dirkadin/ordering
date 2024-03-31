@@ -15,5 +15,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    uses: dirkadin/workflows/.github/workflows/maven.yml@main
+  ubuntu-build:
+    uses: dirkadin/workflows/.github/workflows/ubuntu-maven.yml@main
+  windows-build:
+    uses: dirkadin/workflows/.github/workflows/windows-maven.yml@main
