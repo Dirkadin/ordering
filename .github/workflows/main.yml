@@ -37,6 +37,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - uses: actions/upload-artifact@v3
+        name: Upload jars
         if: always()
         with:
           path: target/*.jar
